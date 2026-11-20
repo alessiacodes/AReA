@@ -1,0 +1,41 @@
+=== AReA (FLUX.1) inference timing ===
+host kn176  job 6278614  GPU NVIDIA H100 80GB HBM3 (79.2 GiB)
+torch 2.11.0+cu128  diffusers 0.41.0  transformers 5.19.0
+model black-forest-labs/FLUX.1-Krea-dev  (bf16, all on GPU (GPU >= 60 GB, as in generate.py))
+output 4096x4096  steps 28  guidance 4.5  seed 42  AReA AReAConfig(phase1_steps=None, pooling='subsample', halo=8, bridge_ratio=0.5, seed=42)
+prompt: a realistic fantasy portrait  of  a fairy outside of their home in a ethereal blue dress at sunset
+
+python imports                          21.21 s
+model load (from_pretrained + move)      6.56 s
+
+                                              run 1 (cold)          run 2 (warm)
+text encoding (CLIP + T5)                           0.00 s                0.00 s
+denoise (28 steps)                                       -                     -
+  Phase I steps (coarse), total                     0.00 s                0.00 s
+  Phase II steps (windowed), total                  0.00 s                0.00 s
+  step 1                                                 -                     -
+  mean step (steps 2-28)                                 -                     -
+  mean Phase I step (excl. step 1)                       -                     -
+  mean Phase II step                                     -                     -
+  min / max step                                         -                     -
+                                                         -                     -
+  AReA overhead, all steps                          0.00 s                0.00 s
+    of which bridge selection                       0.00 s                0.00 s
+final VAE decode (4096, tiled)                      0.00 s                0.00 s
+generate total                                    269.97 s              142.34 s
+image save (PNG+JPG)                               10.08 s               10.08 s
+peak GPU alloc, whole run                          41.09 GiB               41.09 GiB
+peak GPU reserved, whole run                       41.96 GiB               41.96 GiB
+
+per-step totals (s) [phase size]:
+  run 1: 
+  run 2: 
+
+1024 reference (same pipeline/seed, AReA inactive): generate 5.65 s (no hooks)
+run 1 luma (BT.601, 0-255): 1024 reference mean 103.3 std 67.2  |  4K (downscaled to 1024) mean 91.8 std 67.7
+run 1 image: zrun/infer4k-20261015-140249-6278614/run1/area_4096x4096.png
+run 2 luma (BT.601, 0-255): 1024 reference mean 103.3 std 67.2  |  4K (downscaled to 1024) mean 91.8 std 67.7
+run 2 image: zrun/infer4k-20261015-140249-6278614/run2/area_4096x4096.png
+run 1 vs run 2 images identical: True
+script wall time so far: 467.2 s
+nvidia-smi: peak memory.used 43693 MiB, mean GPU util 60% over 471 s sampled

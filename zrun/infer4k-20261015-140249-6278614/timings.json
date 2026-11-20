@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "host": "kn176",
+    "job": "6278614",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_mem_gb": 79.1787109375,
+    "torch": "2.11.0+cu128",
+    "diffusers": "0.41.0",
+    "transformers": "5.19.0",
+    "model": "black-forest-labs/FLUX.1-Krea-dev",
+    "seed": 42,
+    "prompt": "a realistic fantasy portrait  of  a fairy outside of their home in a ethereal blue dress at sunset",
+    "imports_s": 21.20792008913122,
+    "placement": "all on GPU (GPU >= 60 GB, as in generate.py)",
+    "area_config": "AReAConfig(phase1_steps=None, pooling='subsample', halo=8, bridge_ratio=0.5, seed=42)",
+    "load_s": 6.556036698864773,
+    "runs_identical": true
+  },
+  "runs": [
+    {
+      "text_encode": 0,
+      "denoise": null,
+      "steps": [],
+      "step_mean_excl_first": null,
+      "step_min": null,
+      "step_max": null,
+      "phase1_total": 0,
+      "phase2_total": 0,
+      "area_overhead_total": 0,
+      "final_decode": 0,
+      "generate_total": 269.9719670789782,
+      "peak_alloc_gb": 41.092341899871826,
+      "peak_reserved_gb": 41.9609375,
+      "save_s": 10.079499152023345,
+      "image": "zrun/infer4k-20261015-140249-6278614/run1/area_4096x4096.png",
+      "luma_4k": {
+        "mean_Y": 91.77066040039062,
+        "std_Y": 67.68895721435547,
+        "rgb_mean": [
+          101.93818664550781,
+          87.97904205322266,
+          84.62667083740234
+        ]
+      }
+    },
+    {
+      "text_encode": 0,
+      "denoise": null,
+      "steps": [],
+      "step_mean_excl_first": null,
+      "step_min": null,
+      "step_max": null,
+      "phase1_total": 0,
+      "phase2_total": 0,
+      "area_overhead_total": 0,
+      "final_decode": 0,
+      "generate_total": 142.335166614037,
+      "peak_alloc_gb": 41.092341899871826,
+      "peak_reserved_gb": 41.9609375,
+      "save_s": 10.080552816856652,
+      "image": "zrun/infer4k-20261015-140249-6278614/run2/area_4096x4096.png",
+      "luma_4k": {
+        "mean_Y": 91.77066040039062,
+        "std_Y": 67.68895721435547,
+        "rgb_mean": [
+          101.93818664550781,
+          87.97904205322266,
+          84.62667083740234
+        ]
+      }
+    }
+  ],
+  "ref_1024": {
+    "text_encode": 0,
+    "denoise": null,
+    "steps": [],
+    "step_mean_excl_first": null,
+    "step_min": null,
+    "step_max": null,
+    "phase1_total": 0,
+    "phase2_total": 0,
+    "area_overhead_total": 0,
+    "final_decode": 0,
+    "generate_total": 5.648390054935589,
+    "peak_alloc_gb": 33.98022794723511,
+    "peak_reserved_gb": 41.9609375,
+    "luma": {
+      "mean_Y": 103.26065826416016,
+      "std_Y": 67.20291900634766,
+      "rgb_mean": [
+        112.96868896484375,
+        99.83663940429688,
+        95.4290542602539
+      ]
+    }
+  }
+}

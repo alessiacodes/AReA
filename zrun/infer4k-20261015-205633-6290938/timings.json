@@ -1,0 +1,856 @@
+{
+  "meta": {
+    "host": "kn176",
+    "job": "6290938",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "gpu_mem_gb": 79.1787109375,
+    "torch": "2.11.0+cu128",
+    "diffusers": "0.41.0",
+    "transformers": "5.19.0",
+    "model": "black-forest-labs/FLUX.1-Krea-dev",
+    "seed": 42,
+    "prompt": "a realistic fantasy portrait of a fairy outside of their home in a ethereal blue dress at sunset",
+    "imports_s": 15.03659012587741,
+    "placement": "all on GPU (GPU >= 60 GB, as in generate.py)",
+    "area_config": "AReAConfig(phase1_steps=None, pooling='subsample', halo=8, bridge_ratio=0.5, seed=42)",
+    "load_s": 6.137275156797841,
+    "runs_identical": false
+  },
+  "runs": [
+    {
+      "text_encode": 0.8278692339081317,
+      "denoise": 282.3303060398903,
+      "steps": [
+        {
+          "total": 2.908972935983911,
+          "phase": "coarse",
+          "size": 4,
+          "transformer_forward": 2.826447217958048,
+          "area_overhead": 0.06981437094509602,
+          "area_bridge": 0,
+          "scheduler_step": 0.00034985202364623547
+        },
+        {
+          "total": 2.2797459810972214,
+          "phase": "coarse",
+          "size": 4,
+          "transformer_forward": 2.2788684559054673,
+          "area_overhead": 0.0003406952600926161,
+          "area_bridge": 0,
+          "scheduler_step": 0.00011725514195859432
+        },
+        {
+          "total": 2.2735363168176264,
+          "phase": "coarse",
+          "size": 4,
+          "transformer_forward": 2.272906477097422,
+          "area_overhead": 0.00022764806635677814,
+          "area_bridge": 0,
+          "scheduler_step": 0.00012026401236653328
+        },
+        {
+          "total": 2.277705531101674,
+          "phase": "coarse",
+          "size": 4,
+          "transformer_forward": 2.277121303137392,
+          "area_overhead": 0.00022687227465212345,
+          "area_bridge": 0,
+          "scheduler_step": 0.0001173380296677351
+        },
+        {
+          "total": 3.612861596979201,
+          "phase": "coarse",
+          "size": 2,
+          "transformer_forward": 3.610761120915413,
+          "area_overhead": 0.0013614229392260313,
+          "area_bridge": 0,
+          "scheduler_step": 0.00024234503507614136
+        },
+        {
+          "total": 3.2504266719333827,
+          "phase": "coarse",
+          "size": 2,
+          "transformer_forward": 3.249504707986489,
+          "area_overhead": 0.000325832050293684,
+          "area_bridge": 0,
+          "scheduler_step": 0.00015156995505094528
+        },
+        {
+          "total": 3.2512966049835086,
+          "phase": "coarse",
+          "size": 2,
+          "transformer_forward": 3.2505218060687184,
+          "area_overhead": 0.0002908380702137947,
+          "area_bridge": 0,
+          "scheduler_step": 0.00013826880604028702
+        },
+        {
+          "total": 3.2539293670561165,
+          "phase": "coarse",
+          "size": 2,
+          "transformer_forward": 3.2532305950298905,
+          "area_overhead": 0.0002765620592981577,
+          "area_bridge": 0,
+          "scheduler_step": 0.00012583797797560692
+        },
+        {
+          "total": 8.581540120998397,
+          "phase": "fine",
+          "size": 180,
+          "transformer_forward": 8.580008127028123,
+          "area_overhead": 0.03928822185844183,
+          "area_bridge": 0,
+          "scheduler_step": 0.00018012896180152893
+        },
+        {
+          "total": 9.937539003090933,
+          "phase": "fine",
+          "size": 170,
+          "transformer_forward": 9.93655040487647,
+          "area_overhead": 0.5966661591082811,
+          "area_bridge": 0.5905952490866184,
+          "scheduler_step": 0.00011752010323107243
+        },
+        {
+          "total": 10.184782082913443,
+          "phase": "fine",
+          "size": 161,
+          "transformer_forward": 10.183961605885997,
+          "area_overhead": 0.5815207904670388,
+          "area_bridge": 0.5754708077292889,
+          "scheduler_step": 0.00015890086069703102
+        },
+        {
+          "total": 9.677553612040356,
+          "phase": "fine",
+          "size": 153,
+          "transformer_forward": 9.676819419953972,
+          "area_overhead": 0.5989038760308176,
+          "area_bridge": 0.5932265319861472,
+          "scheduler_step": 0.0001264528837054968
+        },
+        {
+          "total": 9.17338580894284,
+          "phase": "fine",
+          "size": 145,
+          "transformer_forward": 9.172603635117412,
+          "area_overhead": 0.6304699941538274,
+          "area_bridge": 0.6241920529864728,
+          "scheduler_step": 0.00012343982234597206
+        },
+        {
+          "total": 8.763122741132975,
+          "phase": "fine",
+          "size": 137,
+          "transformer_forward": 8.762472074013203,
+          "area_overhead": 0.6315865851938725,
+          "area_bridge": 0.6262273273896426,
+          "scheduler_step": 0.00011614896357059479
+        },
+        {
+          "total": 8.661572271957994,
+          "phase": "fine",
+          "size": 130,
+          "transformer_forward": 8.660872922977433,
+          "area_overhead": 0.797900804085657,
+          "area_bridge": 0.7697353321127594,
+          "scheduler_step": 0.00012662308290600777
+        },
+        {
+          "total": 15.484077837085351,
+          "phase": "fine",
+          "size": 123,
+          "transformer_forward": 15.483288606861606,
+          "area_overhead": 1.3436331481207162,
+          "area_bridge": 1.3312697811052203,
+          "scheduler_step": 0.00014745118096470833
+        },
+        {
+          "total": 12.544311171863228,
+          "phase": "fine",
+          "size": 116,
+          "transformer_forward": 12.543569864006713,
+          "area_overhead": 1.101486055413261,
+          "area_bridge": 1.0918199794832617,
+          "scheduler_step": 0.00013103708624839783
+        },
+        {
+          "total": 12.410371897974983,
+          "phase": "fine",
+          "size": 110,
+          "transformer_forward": 12.409557237057015,
+          "area_overhead": 1.1718073273077607,
+          "area_bridge": 1.1612054861616343,
+          "scheduler_step": 0.00013920501805841923
+        },
+        {
+          "total": 11.248349473113194,
+          "phase": "fine",
+          "size": 104,
+          "transformer_forward": 11.247682709945366,
+          "area_overhead": 1.0742408002261072,
+          "area_bridge": 1.0645259832963347,
+          "scheduler_step": 0.00011352612636983395
+        },
+        {
+          "total": 11.797412090934813,
+          "phase": "fine",
+          "size": 99,
+          "transformer_forward": 11.796644938876852,
+          "area_overhead": 1.1567474107723683,
+          "area_bridge": 1.1461139966268092,
+          "scheduler_step": 0.00017417501658201218
+        },
+        {
+          "total": 10.272809151094407,
+          "phase": "fine",
+          "size": 94,
+          "transformer_forward": 10.271966936066747,
+          "area_overhead": 1.0141691956669092,
+          "area_bridge": 1.003779542632401,
+          "scheduler_step": 0.00011598411947488785
+        },
+        {
+          "total": 9.899336146889254,
+          "phase": "fine",
+          "size": 89,
+          "transformer_forward": 9.898692117072642,
+          "area_overhead": 1.0172844789922237,
+          "area_bridge": 1.0079809008166194,
+          "scheduler_step": 0.00010523409582674503
+        },
+        {
+          "total": 15.256638457998633,
+          "phase": "fine",
+          "size": 84,
+          "transformer_forward": 15.255917987786233,
+          "area_overhead": 1.609356612432748,
+          "area_bridge": 1.5951007513795048,
+          "scheduler_step": 0.00014608795754611492
+        },
+        {
+          "total": 15.900850631063804,
+          "phase": "fine",
+          "size": 80,
+          "transformer_forward": 15.900003375019878,
+          "area_overhead": 1.6667419392615557,
+          "area_bridge": 1.6508980460930616,
+          "scheduler_step": 0.00011645513586699963
+        },
+        {
+          "total": 19.043669065926224,
+          "phase": "fine",
+          "size": 75,
+          "transformer_forward": 19.043012214824557,
+          "area_overhead": 2.044317507185042,
+          "area_bridge": 2.02578050410375,
+          "scheduler_step": 9.951600804924965e-05
+        },
+        {
+          "total": 19.99810221698135,
+          "phase": "fine",
+          "size": 71,
+          "transformer_forward": 19.99738367088139,
+          "area_overhead": 2.297173057217151,
+          "area_bridge": 2.2762185262981802,
+          "scheduler_step": 0.00011516688391566277
+        },
+        {
+          "total": 20.6806680241134,
+          "phase": "fine",
+          "size": 68,
+          "transformer_forward": 20.679823911981657,
+          "area_overhead": 2.318662513513118,
+          "area_bridge": 2.29724061768502,
+          "scheduler_step": 0.00010543013922870159
+        },
+        {
+          "total": 19.70573922782205,
+          "phase": "fine",
+          "size": 64,
+          "transformer_forward": 19.70507607702166,
+          "area_overhead": 2.278688764432445,
+          "area_bridge": 2.2589465584605932,
+          "scheduler_step": 0.00010158377699553967
+        }
+      ],
+      "step_mean_excl_first": 10.348938263107643,
+      "step_min": 2.2735363168176264,
+      "step_max": 20.6806680241134,
+      "phase1_total": 23.10847500595264,
+      "phase2_total": 259.22183103393763,
+      "area_overhead_total": 24.04350948310457,
+      "final_decode": 3.0571020441129804,
+      "generate_total": 286.5333102999721,
+      "peak_alloc_gb": 41.092341899871826,
+      "peak_reserved_gb": 41.9609375,
+      "save_s": 10.09959023585543,
+      "image": "zrun/infer4k-20261015-205633-6290938/run1/area_4096x4096.png",
+      "luma_4k": {
+        "mean_Y": 91.77490234375,
+        "std_Y": 67.67476654052734,
+        "rgb_mean": [
+          101.93669891357422,
+          87.98709869384766,
+          84.62640380859375
+        ]
+      }
+    },
+    {
+      "text_encode": 0.03467501187697053,
+      "denoise": 198.4200290159788,
+      "steps": [
+        {
+          "total": 2.5314776070881635,
+          "phase": "coarse",
+          "size": 4,
+          "transformer_forward": 2.528824785957113,
+          "area_overhead": 0.0012807990424335003,
+          "area_bridge": 0,
+          "scheduler_step": 0.00011976505629718304
+        },
+        {
+          "total": 2.7400034030433744,
+          "phase": "coarse",
+          "size": 4,
+          "transformer_forward": 2.739432401023805,
+          "area_overhead": 0.0002223209012299776,
+          "area_bridge": 0,
+          "scheduler_step": 0.00011700601316988468
+        },
+        {
+          "total": 2.7316801419947296,
+          "phase": "coarse",
+          "size": 4,
+          "transformer_forward": 2.731002521002665,
+          "area_overhead": 0.0002671899273991585,
+          "area_bridge": 0,
+          "scheduler_step": 0.00013239402323961258
+        },
+        {
+          "total": 3.065054687904194,
+          "phase": "coarse",
+          "size": 4,
+          "transformer_forward": 3.0643269289284945,
+          "area_overhead": 0.00026505114510655403,
+          "area_bridge": 0,
+          "scheduler_step": 0.00015120790340006351
+        },
+        {
+          "total": 4.2455915559548885,
+          "phase": "coarse",
+          "size": 2,
+          "transformer_forward": 4.243581919930875,
+          "area_overhead": 0.0013354651164263487,
+          "area_bridge": 0,
+          "scheduler_step": 0.0002071368508040905
+        },
+        {
+          "total": 4.553467383142561,
+          "phase": "coarse",
+          "size": 2,
+          "transformer_forward": 4.552682259120047,
+          "area_overhead": 0.00029569189064204693,
+          "area_bridge": 0,
+          "scheduler_step": 0.00013392511755228043
+        },
+        {
+          "total": 4.404481923906133,
+          "phase": "coarse",
+          "size": 2,
+          "transformer_forward": 4.403824592940509,
+          "area_overhead": 0.0002525867894291878,
+          "area_bridge": 0,
+          "scheduler_step": 0.0001325160264968872
+        },
+        {
+          "total": 4.469848298933357,
+          "phase": "coarse",
+          "size": 2,
+          "transformer_forward": 4.469202765030786,
+          "area_overhead": 0.00024613807909190655,
+          "area_bridge": 0,
+          "scheduler_step": 0.000132810790091753
+        },
+        {
+          "total": 11.359511855989695,
+          "phase": "fine",
+          "size": 180,
+          "transformer_forward": 11.358574071899056,
+          "area_overhead": 0.0049174269661307335,
+          "area_bridge": 0,
+          "scheduler_step": 0.000167385907843709
+        },
+        {
+          "total": 11.59657517913729,
+          "phase": "fine",
+          "size": 170,
+          "transformer_forward": 11.595868874108419,
+          "area_overhead": 0.6809735575225204,
+          "area_bridge": 0.675286601530388,
+          "scheduler_step": 0.00012902403250336647
+        },
+        {
+          "total": 11.036374808987603,
+          "phase": "fine",
+          "size": 161,
+          "transformer_forward": 11.035753954900429,
+          "area_overhead": 0.6945136589929461,
+          "area_bridge": 0.6889023829717189,
+          "scheduler_step": 0.00011855293996632099
+        },
+        {
+          "total": 10.600090032909065,
+          "phase": "fine",
+          "size": 153,
+          "transformer_forward": 10.59940135711804,
+          "area_overhead": 0.673098080791533,
+          "area_bridge": 0.6669312189333141,
+          "scheduler_step": 0.00014842581003904343
+        },
+        {
+          "total": 9.071160711115226,
+          "phase": "fine",
+          "size": 145,
+          "transformer_forward": 9.070372327929363,
+          "area_overhead": 0.7092628325335681,
+          "area_bridge": 0.7032951593864709,
+          "scheduler_step": 0.00013617100194096565
+        },
+        {
+          "total": 7.758364318870008,
+          "phase": "fine",
+          "size": 137,
+          "transformer_forward": 7.757709888974205,
+          "area_overhead": 0.7032831073738635,
+          "area_bridge": 0.6976003951858729,
+          "scheduler_step": 0.00017014890909194946
+        },
+        {
+          "total": 7.036482858005911,
+          "phase": "fine",
+          "size": 130,
+          "transformer_forward": 7.03584852302447,
+          "area_overhead": 0.8799184337258339,
+          "area_bridge": 0.8721935187932104,
+          "scheduler_step": 0.0001281260047107935
+        },
+        {
+          "total": 9.955785619094968,
+          "phase": "fine",
+          "size": 123,
+          "transformer_forward": 9.955144647043198,
+          "area_overhead": 1.505332440836355,
+          "area_bridge": 1.493393420940265,
+          "scheduler_step": 0.00010952004231512547
+        },
+        {
+          "total": 8.859195599099621,
+          "phase": "fine",
+          "size": 116,
+          "transformer_forward": 8.85855161701329,
+          "area_overhead": 1.241929318755865,
+          "area_bridge": 1.2321607060730457,
+          "scheduler_step": 0.00013085221871733665
+        },
+        {
+          "total": 8.066563714994118,
+          "phase": "fine",
+          "size": 110,
+          "transformer_forward": 8.065918223932385,
+          "area_overhead": 1.330707129323855,
+          "area_bridge": 1.320608404232189,
+          "scheduler_step": 0.00012812716886401176
+        },
+        {
+          "total": 7.453972809948027,
+          "phase": "fine",
+          "size": 104,
+          "transformer_forward": 7.453182426979765,
+          "area_overhead": 1.2380373843479902,
+          "area_bridge": 1.228436089353636,
+          "scheduler_step": 0.00011848704889416695
+        },
+        {
+          "total": 7.207426392938942,
+          "phase": "fine",
+          "size": 99,
+          "transformer_forward": 7.206762430956587,
+          "area_overhead": 1.3356090798042715,
+          "area_bridge": 1.3251655027270317,
+          "scheduler_step": 0.00012265797704458237
+        },
+        {
+          "total": 7.13829956902191,
+          "phase": "fine",
+          "size": 94,
+          "transformer_forward": 7.137697763973847,
+          "area_overhead": 1.204492379911244,
+          "area_bridge": 1.1953770807012916,
+          "scheduler_step": 0.0001147841103374958
+        },
+        {
+          "total": 6.195804768940434,
+          "phase": "fine",
+          "size": 89,
+          "transformer_forward": 6.195113633060828,
+          "area_overhead": 1.154169361339882,
+          "area_bridge": 1.1449340682011098,
+          "scheduler_step": 0.00020625186152756214
+        },
+        {
+          "total": 8.396576397120953,
+          "phase": "fine",
+          "size": 84,
+          "transformer_forward": 8.395967049058527,
+          "area_overhead": 1.9539992320351303,
+          "area_bridge": 1.9378603240475059,
+          "scheduler_step": 0.00010294304229319096
+        },
+        {
+          "total": 7.5258433918934315,
+          "phase": "fine",
+          "size": 80,
+          "transformer_forward": 7.5252085090614855,
+          "area_overhead": 1.9505559431854635,
+          "area_bridge": 1.935893479268998,
+          "scheduler_step": 0.00012334599159657955
+        },
+        {
+          "total": 7.8497694509569556,
+          "phase": "fine",
+          "size": 75,
+          "transformer_forward": 7.849055559141561,
+          "area_overhead": 2.381561477901414,
+          "area_bridge": 2.3623663089238107,
+          "scheduler_step": 0.00014984491281211376
+        },
+        {
+          "total": 7.533485068008304,
+          "phase": "fine",
+          "size": 71,
+          "transformer_forward": 7.532672126078978,
+          "area_overhead": 2.5873571333941072,
+          "area_bridge": 2.565571728395298,
+          "scheduler_step": 0.00010852399282157421
+        },
+        {
+          "total": 7.8891051090322435,
+          "phase": "fine",
+          "size": 68,
+          "transformer_forward": 7.888442189898342,
+          "area_overhead": 2.689040972618386,
+          "area_bridge": 2.668230304727331,
+          "scheduler_step": 0.00012174900621175766
+        },
+        {
+          "total": 7.148036357946694,
+          "phase": "fine",
+          "size": 64,
+          "transformer_forward": 7.147377975052223,
+          "area_overhead": 2.5792516313958913,
+          "area_bridge": 2.5593919553793967,
+          "scheduler_step": 0.00012454879470169544
+        }
+      ],
+      "step_mean_excl_first": 7.255131533662616,
+      "step_min": 2.5314776070881635,
+      "step_max": 11.59657517913729,
+      "phase1_total": 28.7416050019674,
+      "phase2_total": 169.6784240140114,
+      "area_overhead_total": 27.50217582564801,
+      "final_decode": 3.258272443898022,
+      "generate_total": 202.04128913814202,
+      "peak_alloc_gb": 41.092341899871826,
+      "peak_reserved_gb": 41.9609375,
+      "save_s": 10.068990777945146,
+      "image": "zrun/infer4k-20261015-205633-6290938/run2/area_4096x4096.png",
+      "luma_4k": {
+        "mean_Y": 91.76860809326172,
+        "std_Y": 67.67369079589844,
+        "rgb_mean": [
+          101.92453002929688,
+          87.98198699951172,
+          84.62939453125
+        ]
+      }
+    }
+  ],
+  "ref_1024": {
+    "text_encode": 0.03573913290165365,
+    "denoise": 5.5947786050383,
+    "steps": [
+      {
+        "total": 0.5547115420922637,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.5532904139254242,
+        "area_overhead": 0.0003484981134533882,
+        "area_bridge": 0,
+        "scheduler_step": 0.00014703907072544098
+      },
+      {
+        "total": 0.1819483118597418,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.1813505010213703,
+        "area_overhead": 0.0002545702736824751,
+        "area_bridge": 0,
+        "scheduler_step": 8.009793236851692e-05
+      },
+      {
+        "total": 0.18123458116315305,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18075286503881216,
+        "area_overhead": 0.000194967957213521,
+        "area_bridge": 0,
+        "scheduler_step": 7.49130267649889e-05
+      },
+      {
+        "total": 0.18217123090289533,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18174795294180512,
+        "area_overhead": 0.00017139501869678497,
+        "area_bridge": 0,
+        "scheduler_step": 7.745297625660896e-05
+      },
+      {
+        "total": 0.18687142501585186,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18642841605469584,
+        "area_overhead": 0.00018319790251553059,
+        "area_bridge": 0,
+        "scheduler_step": 7.340405136346817e-05
+      },
+      {
+        "total": 0.1924839720595628,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.19206099607981741,
+        "area_overhead": 0.00017546606250107288,
+        "area_bridge": 0,
+        "scheduler_step": 7.20941461622715e-05
+      },
+      {
+        "total": 0.18357476987875998,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18313327012583613,
+        "area_overhead": 0.0001706019975244999,
+        "area_bridge": 0,
+        "scheduler_step": 7.75759108364582e-05
+      },
+      {
+        "total": 0.18262917501851916,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.1821836221497506,
+        "area_overhead": 0.00018772995099425316,
+        "area_bridge": 0,
+        "scheduler_step": 7.376796565949917e-05
+      },
+      {
+        "total": 0.18295012996532023,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.1825148561038077,
+        "area_overhead": 0.00017234706319868565,
+        "area_bridge": 0,
+        "scheduler_step": 7.921084761619568e-05
+      },
+      {
+        "total": 0.18574222107417881,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18525299103930593,
+        "area_overhead": 0.000199079979211092,
+        "area_bridge": 0,
+        "scheduler_step": 8.272891864180565e-05
+      },
+      {
+        "total": 0.1921058299485594,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.19165526097640395,
+        "area_overhead": 0.0001877141185104847,
+        "area_bridge": 0,
+        "scheduler_step": 7.202988490462303e-05
+      },
+      {
+        "total": 0.1881870529614389,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18777160090394318,
+        "area_overhead": 0.00016904203221201897,
+        "area_bridge": 0,
+        "scheduler_step": 7.204199209809303e-05
+      },
+      {
+        "total": 0.18393882014788687,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18351420294493437,
+        "area_overhead": 0.00017132796347141266,
+        "area_bridge": 0,
+        "scheduler_step": 7.674912922084332e-05
+      },
+      {
+        "total": 0.1836398288141936,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.1832011858932674,
+        "area_overhead": 0.0001813939306885004,
+        "area_bridge": 0,
+        "scheduler_step": 7.440499030053616e-05
+      },
+      {
+        "total": 0.1839864042121917,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.1835581238847226,
+        "area_overhead": 0.0001715079415589571,
+        "area_bridge": 0,
+        "scheduler_step": 7.440615445375443e-05
+      },
+      {
+        "total": 0.1897326367907226,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18929548002779484,
+        "area_overhead": 0.000177070964127779,
+        "area_bridge": 0,
+        "scheduler_step": 7.508485578000546e-05
+      },
+      {
+        "total": 0.19056419120170176,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.19013136602006853,
+        "area_overhead": 0.00018158811144530773,
+        "area_bridge": 0,
+        "scheduler_step": 7.27199949324131e-05
+      },
+      {
+        "total": 0.18725312897004187,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18683564011007547,
+        "area_overhead": 0.00017028814181685448,
+        "area_bridge": 0,
+        "scheduler_step": 7.45370052754879e-05
+      },
+      {
+        "total": 0.18495979090221226,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.184524639043957,
+        "area_overhead": 0.00018241791985929012,
+        "area_bridge": 0,
+        "scheduler_step": 7.375702261924744e-05
+      },
+      {
+        "total": 0.1852404549717903,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.1848158948123455,
+        "area_overhead": 0.00017371634021401405,
+        "area_bridge": 0,
+        "scheduler_step": 7.237796671688557e-05
+      },
+      {
+        "total": 0.189021852100268,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18860596511512995,
+        "area_overhead": 0.00016920827329158783,
+        "area_bridge": 0,
+        "scheduler_step": 7.24969431757927e-05
+      },
+      {
+        "total": 0.19026839383877814,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18983861501328647,
+        "area_overhead": 0.0001817301381379366,
+        "area_bridge": 0,
+        "scheduler_step": 7.073092274367809e-05
+      },
+      {
+        "total": 0.18755958415567875,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18713216786272824,
+        "area_overhead": 0.0001716709230095148,
+        "area_bridge": 0,
+        "scheduler_step": 7.32520129531622e-05
+      },
+      {
+        "total": 0.1864952859468758,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18607126199640334,
+        "area_overhead": 0.00017341598868370056,
+        "area_bridge": 0,
+        "scheduler_step": 7.253303192555904e-05
+      },
+      {
+        "total": 0.1855050539597869,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18506342102773488,
+        "area_overhead": 0.00018211104907095432,
+        "area_bridge": 0,
+        "scheduler_step": 7.123989053070545e-05
+      },
+      {
+        "total": 0.19143301295116544,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.1910070669837296,
+        "area_overhead": 0.00017004413530230522,
+        "area_bridge": 0,
+        "scheduler_step": 8.039991371333599e-05
+      },
+      {
+        "total": 0.19101311406120658,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.1905709570273757,
+        "area_overhead": 0.00018254294991493225,
+        "area_bridge": 0,
+        "scheduler_step": 7.3953066021204e-05
+      },
+      {
+        "total": 0.18955681007355452,
+        "phase": "plain",
+        "size": null,
+        "transformer_forward": 0.18911996693350375,
+        "area_overhead": 0.0001785620115697384,
+        "area_bridge": 0,
+        "scheduler_step": 7.30450265109539e-05
+      }
+    ],
+    "step_mean_excl_first": 0.18666915047948282,
+    "step_min": 0.18123458116315305,
+    "step_max": 0.5547115420922637,
+    "phase1_total": 0,
+    "phase2_total": 0,
+    "area_overhead_total": 0.005233207251876593,
+    "final_decode": 0.09249023487791419,
+    "generate_total": 5.743788870982826,
+    "peak_alloc_gb": 33.98022794723511,
+    "peak_reserved_gb": 41.9609375,
+    "luma": {
+      "mean_Y": 103.26065826416016,
+      "std_Y": 67.20291900634766,
+      "rgb_mean": [
+        112.96868896484375,
+        99.83663940429688,
+        95.4290542602539
+      ]
+    }
+  }
+}
